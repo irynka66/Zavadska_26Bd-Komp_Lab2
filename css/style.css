@@ -1,0 +1,547 @@
+/* Глобальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FF6F4E;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 10px 0;
+    width: 1170px;
+    height: 84px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Навігація */
+.navbar {
+    display: flex;
+
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+
+.navbar .logo {
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+    border: 1px, solid #a7a3a3;
+    height: 40px;
+
+    align-items: center;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    
+    width: 95px;
+    
+}
+
+nav{
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 15px;
+    transition: color 0.3s ease;
+    position: relative;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+a:hover {
+        
+    color:#000000; 
+}
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000; 
+    transition: width 0.3s ease;
+  }
+  a:hover::after {
+    width: 100%;
+  }
+
+
+.search-box input {
+    padding: 5px;
+    padding-right: 20px;
+    font-size: 14px;
+    height: 40px;
+    border: none;
+    border-left: 1px solid #a7a3a3;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+}
+
+.logo-img  {
+    display: flex;
+    height: 25px;
+    padding-left: 260px;
+    padding-right: 4px;
+    
+}
+
+
+.base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    background: linear-gradient(to right, #ffffff, #96824b);
+    width: 1170px;
+    height: 500px;
+    margin: 15px auto;
+}
+
+.base-content {
+    max-width: 50%;
+}
+
+.base h1 {
+    font-size: 40px;
+    margin-bottom: 80px;
+    color: red;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    
+}
+
+.base h3 {
+    font-size: 28px;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.base p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+}
+
+.cta-btn {
+    background-color: #65ae72;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    margin-top: 25px;
+}
+
+.base-banner {
+
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+    height: 400px;
+    
+}
+
+.base-banner h2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+
+
+.courses {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 1170px;
+    
+}
+
+.course-card {
+    height: 400px;
+    width: 360px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+}
+
+.course-card img {
+    height: 240px;
+    width: 360px;
+}
+
+.kyrs {
+    font-size: 28px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.course-card button {
+    background-color: #6aa5bd;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.classny {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales {
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    padding-top: 15px;
+    font-size: 27px;
+    padding-left: 25px;
+
+}
+
+.buttonsales {
+
+    padding-top: 15px;
+    padding-right: 25px;
+}
+
+.hara {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.sales-info {
+    margin-left: 48px;
+}
+
+.salestogether {
+    background-color: white;
+    width: 760px;
+
+
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+    margin-left: 50px;
+
+}
+
+.border {
+    border: 1px, solid #a7a3a3;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+
+}
+
+.ssales {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.vv
+{
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    font-size: 28px;
+}
+
+.nn {
+    padding-top: 6px;
+    font-size: 11px;
+}
+
+.courses {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Корзина */
+
+.shopping-bag {
+    margin: auto;
+    display: flex;
+    height: 400px;
+    width: 1170px;
+    
+}
+.razom {
+    
+    display: flex;
+    width: 760px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    flex-direction:column ;
+}
+
+.korzina {
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+    display: flex;
+    font-size: 25px;
+    padding: 25px 0px 15px 35px;
+   
+}
+
+.bag-item {
+    margin: auto;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 14px;
+    width: 760px;
+    
+}
+
+.bag-item img {
+    width: 100px;
+    height: 68px;
+    background-color: #ddd;
+    
+}
+.tekst{
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 200px;
+   
+}
+.textt{
+    margin: auto;
+    display: flex;
+    padding-right: 240px;
+    justify-content: left;
+    align-items: center;
+   
+
+}
+.bag-item p {
+    margin: auto;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+    justify-content: start;
+}
+
+
+.och{
+    margin: auto;
+    display: flex;
+    width: 690px;
+    align-items: center;
+    border-bottom:1px solid color(srgb rgb(163, 163, 163)) ;
+
+}
+
+.dch{
+    
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  
+   
+}
+
+.chislo{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 13px;
+    padding-right: 13px;
+    border: 1px, solid #a7a3a3;
+    height: 34px;
+}
+
+
+.total {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    gap: 220px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+
+.total p {
+    margin: auto;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+button {
+    background-color: #d88e06;
+    color: #fff;
+    border-radius: 4px;
+    padding: 13px 27px;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #ffa500;
+  }
+
+.dch h3 {
+    color: #333;
+}
+
+.chose {
+    background-color: white;
+    width: 360px;
+    margin-left: 50px;
+
+    text-align: center;
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+}
+
+.chose img {
+    height: 320px;
+    width: 360px;
+}
+
+.kartinka {
+    width: 360px;
+    height: 320px;
+}
+
+.obrani {
+    height: 80px;
+    width: 360px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column ;
+    margin-left: 28px;
+
+
+}
+
+.obranitext {
+    width: 360px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.math {
+    margin: auto;
+    display: flex;
+    width: 360px;
+    text-align: left;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 10px 0;
+    width: 1170px;
+    height: 54px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 18px;
+
+    font-family: 'Bookman', 'URW Bookman L', serif;
+    color: #333;
+    border: 1px, solid #a7a3a3;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    margin-left: 30px;
+    width: 220px;
+}
+
+.social-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.social-links {
+    margin-right: 30px;
+    display: flex;
+    gap: 17px;
+    cursor: pointer;
+}
+
+.propusk{
+    border: 1px, solid #cac9c9;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 710px;
+    margin-left: 25px;
+
+}
